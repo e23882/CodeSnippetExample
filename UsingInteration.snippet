@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
+  <CodeSnippet Format="1.0.0">  
+    <Header>  
+      <Title>UsingInteration</Title>  
+      <Author>LeoYang</Author>  
+      <Description>Add using interaction code</Description>  
+      <Shortcut>interaction</Shortcut>  
+    </Header>  
+    <Snippet>  
+      <References>  
+        <Reference>  
+          <Assembly>System.ComponentModel.DataAnnotations.dll</Assembly>  
+        </Reference>  
+      </References>  
+      <Imports>  
+        <Import>  
+          <Namespace>System.ComponentModel.DataAnnotations</Namespace>  
+        </Import>  
+      </Imports>  
+      <Declarations>  
+        <Literal>  
+          <ID>classname</ID>  
+          <ToolTip>Replace with specified name</ToolTip>  
+          <Default>MyClass</Default>  
+        </Literal>  
+        <Object>  
+          <ID>Object</ID>  
+          <Type>System.Object</Type>  
+          <ToolTip>Replace with a object in your application.</ToolTip>  
+          <Default>myObject</Default>  
+        </Object>  
+      </Declarations>  
+      <Code Language="Xaml">  
+        <![CDATA[ 
+xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+]]>  
+      </Code>  
+    </Snippet>  
+  </CodeSnippet>  
+</CodeSnippets>  
