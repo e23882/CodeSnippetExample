@@ -5,12 +5,12 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>LeoDefaultRegionBlock</Title>
+      <Title>GenerateTryCatchCode</Title>
       <Author>LeoYang</Author>
       <Description>Adds default region code block</Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>regg</Shortcut>
+      <Shortcut>tcc</Shortcut>
     </Header>
     <Snippet>
       <References>
@@ -34,14 +34,14 @@
           <Type>System.Object</Type>
         </Object>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[#region Declarations$end$
-#endregion
+      <Code Language="csharp" Delimiter="$"><![CDATA[try
+{
+    $end$
+}
+catch(Exception ie)
+{
 
-#region Property
-#endregion
-
-#region Memberfunction
-#endregion]]></Code>
+}]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
